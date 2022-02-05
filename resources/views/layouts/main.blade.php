@@ -18,6 +18,7 @@
             <div class="collapse navbar-collapse" id="navbar">
                 <a href="/" class="navbar-brand">
                     <img src="/img/hdcevents_logo.svg" alt="HDC Events">
+                    <p>HDC Events</p>
                 </a>
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -36,7 +37,16 @@
             </div>
         </nav>
     </header>
-    @yield('content')
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                @if (session('msg'))
+                    <p class="msg">{{{ session('msg') }}}</p>
+                @endif
+                @yield('content')
+            </div>
+        </div>
+    </main>
     <footer>
         <p>HDC Events &copy; 2020</p>
     </footer>
