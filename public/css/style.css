@@ -117,15 +117,16 @@ header {
 }
 
 #events-container .card {
-    flex: 1 1 0;
+    flex: 1 1 24%;
     max-width: 25%;
     border-radius: 10px;
     padding: 0;
-    margin: 5px;
+    margin: .5%;
 }
 
 #events-container img {
     border-radius: 10px;
+    max-height: 300px;
 }
 
 .card .card-date {
@@ -163,6 +164,74 @@ header {
     margin-bottom: 10px;
 }
 
+/* Event page */
+#image-container,
+#info-container {
+    margin-top: 30px;
+}
+
+#image-container img{
+    border-radius: 10px;
+}
+
+#info-container h1 {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+#info-container p {
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+}
+
+#info-container h3,
+#description-container h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.location-icon {
+    margin-right: 9px;
+    margin-left: 5px;
+    font-size: 20px;
+    color: #f2a340;
+} 
+
+.people-icon {
+    margin-right: 5px;
+    margin-left: 1px;
+    font-size: 20px;
+    color: #f2a340;
+} 
+
+.star-icon {
+    margin-right: 7px;
+    margin-left: 1px;
+    font-size: 20px;
+    color: #f2a340;
+}
+
+#info-container #event-submit {
+    margin: 20px 0;
+}
+
+#items-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#items-list li {
+    display: flex;
+    align-items: center;
+}
+
+#items-list i {
+    color: #f2a340;
+    margin-right: 10px;
+}
+
+/* Footer */
 footer {
     text-align: center;
     background-color: #353e48;
