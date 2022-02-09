@@ -103,11 +103,16 @@ header {
     padding: 50px;
 }
 
+#events-container a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
 #events-container h2 {
     margin-bottom: 10px;
 }
 
-#event-container subtitle {
+#events-container > p {
     color: #757575;
     margin-bottom: 30px;
 }
@@ -172,6 +177,8 @@ header {
 
 #image-container img{
     border-radius: 10px;
+    max-height: 500px;
+    width: 850px;
 }
 
 #info-container h1 {
